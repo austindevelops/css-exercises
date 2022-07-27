@@ -5,6 +5,34 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: rgb(229, 229, 229);
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0 10px;
+}
+
+li {
+  display: inline-flex;
+  padding: 0 10px;
 }
 
 img {
@@ -16,6 +44,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  margin: 5px;
+  padding: 10px;
 }
 
 input {
@@ -24,4 +54,31 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  font-size: medium;
+}
+/* unvisited link */
+a:link {
+  color: rgb(135, 135, 135);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(135, 135, 135);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: rgb(135, 135, 135);
+  text-decoration: none;
 }
