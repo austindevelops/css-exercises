@@ -26,13 +26,12 @@ body {
   justify-content: center;
 }
 
-ul {
+ul, li {
   padding: 0 10px;
 }
 
 li {
   display: inline-flex;
-  padding: 0 10px;
 }
 
 img {
@@ -56,29 +55,13 @@ input {
   margin-bottom: 16px;
 }
 
-a {
+a:link, a:visited, a:hover, a:active {
+  color: rgb(135, 135, 135);
+  text-decoration: none;
   font-size: medium;
 }
-/* unvisited link */
-a:link {
-  color: rgb(135, 135, 135);
-  text-decoration: none;
-}
 
-/* visited link */
-a:visited {
-  color: rgb(135, 135, 135);
-  text-decoration: none;
-}
-
-/* mouse over link */
 a:hover {
   color: hotpink;
-  text-decoration: none;
-}
-
-/* selected link */
-a:active {
-  color: rgb(135, 135, 135);
   text-decoration: none;
 }
